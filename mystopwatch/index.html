@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <script src="main.js"></script>
-      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-        <title>Super Timer</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-      <hi>RUNNING TIME</hi>
-        <div id="buttons">
-        <button id="auto" onclick="aut()">start</button> 
-        <!--<button id="but1" onclick="add()">+10ms</button>-->
-        <button id="auto" onclick="stop_aut()">stop</button>
-        <button id="reset" onclick="reset()">reset</button> 
-        <button id="lap" onclick="lap()">lap</button> 
-        </div>    
-        <div class="end">00 : 00 : 00</div>
-        <ol id="lapEnd"></ol>
+<html lang="en">
 
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Super Runner<br><hr>
+        </header>
+        <section>
+            <div class="watch">
+                <p id="stopwatch">
+                    <span id="minutes">00</span><span id="colon">:</span><span id="seconds">00</span>:<span id="tens">00</span>
+                </p>
+            </div>
+            <div class="button-container">
+                <button id="button-start">Start</button>
+                <button id="button-stop">Stop</button>
+                <button id="button-reset">Reset</button>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="main.js"></script>
 </html>
